@@ -14,7 +14,7 @@ local sectionMisc = storage.globalSection("SettingsShelfControl_misc")
 
 local function checkOwnership(section, ownershipChecker, ctx)
     if section:get("supress")
-        and ownershipChecker(ctx.owner)
+        and ownershipChecker(ctx)
         and section:get("minDisposition") > ctx.owner.disposition
         and not LocationIsWhitelisted(ctx)
     then

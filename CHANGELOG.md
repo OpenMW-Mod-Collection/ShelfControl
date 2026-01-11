@@ -1,5 +1,11 @@
 # Shelf Control (OpenMW)
 
+## 2.0.2
+
+### Fixes
+
+- Fixed not being able to read faction-owned books if player already had sufficient rank for it
+
 ## 2.0.1
 
 ### Fixes

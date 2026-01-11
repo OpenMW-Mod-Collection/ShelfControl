@@ -9,6 +9,7 @@ local sectionMisc = storage.globalSection("SettingsShelfControl_misc")
 --- @class Owner
 --- @field recordId string|nil     The NPC's record ID (if the book has a direct owner).
 --- @field factionId string|nil    The owning faction's ID (if faction-owned).
+--- @field factionRank string|nil  Rank required to be allowed to pick up the book
 --- @diagnostic disable-next-line: undefined-doc-name
 --- @field book types.Book         Book object
 --- @diagnostic disable-next-line: undefined-doc-name
@@ -29,6 +30,7 @@ function Owner.new(book, player)
 
     self.recordId    = book.owner and book.owner.recordId or nil
     self.factionId   = book.owner and book.owner.factionId or nil
+    self.factionRank = book.owner and book.owner.factionRank or nil
     self.book        = book
     self.disposition = -1
     self.record      = nil
