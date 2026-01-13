@@ -1,5 +1,11 @@
 # Shelf Control (OpenMW)
 
+## 2.0.3
+
+### Fixes
+
+- Fixed an error on interacting with faction-owned without a rank requirement
+
 ## 2.0.2
 
 ### Fixes

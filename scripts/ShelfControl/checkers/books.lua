@@ -35,7 +35,8 @@ function IsFactionOwned(ctx)
     if UnrestrictiveFactions[string.lower(ctx.owner.factionId)] then return true end
 
     local playerRank = ctx.player.type.getFactionRank(ctx.player, ctx.owner.factionId)
-    if playerRank >= ctx.owner.factionRank then return false end
+    local requiredRank = ctx.owner.factionRank or 1
+    if playerRank >= requiredRank then return false end
 
     local actorsNearby = ctx.owner.book.cell:getAll(types.NPC)[1]
     if actorsNearby == nil then return false end
