@@ -1,5 +1,11 @@
 # Shelf Control (OpenMW)
 
+## 2.0.4
+
+### Fixes
+
+- Fixed unrestrictive factions list actually restricting the book reading
+
 ## 2.0.3
 
 ### Fixes

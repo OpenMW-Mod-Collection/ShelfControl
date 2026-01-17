@@ -32,7 +32,7 @@ end
 ---   - The cell has at least one NPC loaded in.
 function IsFactionOwned(ctx)
     if not ctx.owner.factionId then return false end
-    if UnrestrictiveFactions[string.lower(ctx.owner.factionId)] then return true end
+    if UnrestrictiveFactions[string.lower(ctx.owner.factionId)] then return false end
 
     local playerRank = ctx.player.type.getFactionRank(ctx.player, ctx.owner.factionId)
     local requiredRank = ctx.owner.factionRank or 1

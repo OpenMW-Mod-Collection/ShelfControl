@@ -74,6 +74,7 @@ function Owner:_printDebugInfo()
     print("\nCurrent book owner info" ..
         "\nrecordId ->      " .. tostring(self.recordId) ..
         "\nfactionId ->     " .. tostring(self.factionId) ..
+        "\nfactionRank ->   " .. tostring(self.factionRank) ..
         "\nrecord ->        " .. tostring(self.record) ..
         "\nsellsBooks ->    " .. tostring(self.sellsBooks) ..
         "\nself ->          " .. tostring(self.self) ..
