@@ -69,6 +69,8 @@ Confirmed compatible:
 - [Book Pickup](https://www.nexusmods.com/morrowind/mods/46625) by **NullCascade and Zackhasacat** - Alters only unowned books
 - TR, SHotN, PC by **Project Tamriel Team** - Explicit support for factions and classes added by these mods
 - [trav's OpenMW Books Enhanced](https://www.nexusmods.com/morrowind/mods/55126) by **trav** - Read indicator doesn't appear if access to the book is denied
+- [Tamriel_Data](https://www.nexusmods.com/morrowind/mods/44537) by **Project Tamriel Team** - Spell books filter support
+- [The Spell Tomes - Magic Books of Morrowind to Study and Cast to](https://www.nexusmods.com/morrowind/mods/57432) by **Hyacinth** - Spell books filter support
 
 ## Known Issues
 
