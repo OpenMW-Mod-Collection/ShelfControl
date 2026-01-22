@@ -1,5 +1,14 @@
 # Shelf Control (OpenMW)
 
+## 2.1
+
+### Features
+
+- Added a setting to filter out spell books from scripted books list. Supports:
+  - Vanilla
+  - Tamriel Data
+  - The Spell Tomes
+
 ## 2.0.4
 
 ### Fixes

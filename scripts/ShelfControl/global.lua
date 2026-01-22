@@ -31,7 +31,11 @@ local function onBookActivation(book, actor)
     if not types.Player.objectIsInstance(actor) then return true end
     -- if book has an mwscript attached
     local bookRecord = GetRecord(book)
-    if sectionMisc:get("ignoreBooksWithMWScripts") and bookRecord.mwscript then return true end
+    if (sectionMisc:get("ignoreBooksWithMWScripts") and bookRecord.mwscript)
+        and not (sectionMisc:get("spellbooksAreNormalBooks") and IsSpellbook(book.recordId))
+    then
+        return true
+    end
     -- if book is a scroll
     if sectionMisc:get("ignoreScrolls") and bookRecord.isScroll then return true end
 

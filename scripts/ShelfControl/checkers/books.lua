@@ -8,7 +8,6 @@ require("scripts.ShelfControl.utils.consts")
 --- Dead or unloaded NPCs don't count as owners.
 function IsNpcOwned(ctx)
     if not ctx.owner.recordId then return false end
-    if ctx.owner.factionId then return false end
     if ctx.owner.isDead then return false end
     return true
 end

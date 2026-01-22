@@ -40,5 +40,14 @@ enableCellWhitelist_description: |
   - Temples
   - Imperial cult shrines, chapels, etc.
 ignoreBooksWithMWScripts_name: Ignore Books With Attached MWScripts
+spellbooksAreNormalBooks_name: Treat Spell Books as Normal Books
+spellbooksAreNormalBooks_description: |
+  Since spell books always have an MWScript attached to them, this option is for filtering them out of the scripted books list.
+
+  Supports spell books from:
+  - Vanilla
+  - Tamriel Data, excluding:
+    - The Weight of Guilt
+  - The Spell Tomes
 ignoreScrolls_name: Ignore Scrolls, Paper, etc.
 enableDebug_name: Enable Debug Output

@@ -90,6 +90,13 @@ I.Settings.registerGroup {
             default = true,
         },
         {
+            key = 'spellbooksAreNormalBooks',
+            name = 'spellbooksAreNormalBooks_name',
+            description = 'spellbooksAreNormalBooks_description',
+            renderer = 'checkbox',
+            default = true,
+        },
+        {
             key = 'ignoreScrolls',
             name = 'ignoreScrolls_name',
             renderer = 'checkbox',
