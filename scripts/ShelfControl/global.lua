@@ -16,7 +16,7 @@ local function checkOwnership(section, ownershipChecker, ctx)
     if section:get("supress")
         and ownershipChecker(ctx)
         and section:get("minDisposition") > ctx.owner.disposition
-        and not LocationIsWhitelisted(ctx)
+        and not (sectionMisc:get("enableCellWhitelist") and LocationIsWhitelisted(ctx))
     then
         ShowMessage(ctx)
         return true

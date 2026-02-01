@@ -1,5 +1,12 @@
 # Shelf Control (OpenMW)
 
+## 2.1.1
+
+### Fixes
+
+- Fixed spell books from Tamriel Data not being actually whitelisted
+- Fixed "Enable Logical Cell Whitelist" not affecting anything when disabled
+
 ## 2.1
 
 ### Features

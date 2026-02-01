@@ -15,15 +15,8 @@ function GetRecord(obj)
 end
 
 function IsSpellbook(recordId)
-    if Spellbooks[recordId] then
-        return true
-    end
-
+    return Spellbooks[recordId]
     -- support for The Spell Tomes - Magic Books of Morrowind to Study and Cast to
     -- https://www.nexusmods.com/morrowind/mods/57432
-    if string.find(recordId, "^spelltome_") then
-        return true
-    end
-
-    return false
+        or string.find(recordId, "^spelltome_")
 end
