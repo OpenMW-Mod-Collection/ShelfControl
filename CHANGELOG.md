@@ -1,5 +1,10 @@
 # Shelf Control (OpenMW)
 
+## 2.2
+
+- Fleshed out messages for faction-owned books: they no longer mention any names and have more variety
+- Added new racial messages for npc-owned books
+
 ## 2.1.1
 
 ### Fixes

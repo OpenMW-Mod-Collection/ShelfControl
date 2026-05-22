@@ -57,6 +57,12 @@ local function collectGenericMessages(subgroups, ctx)
         prefix, l10n, AdditionalMsgCtx(GetRecord(ctx.owner.self)))
 end
 
+local function collectRacialMessages(subgroups, ctx)
+    local race = GetRecord(ctx.owner.self).race
+    local prefix = msgSrc .. "racial_" .. race
+    return CollectAllMessagesByPrefix(prefix, l10n)
+end
+
 local function collectUnlockableMessages(subgroups, ctx)
     local msgs = {}
     for group, _ in pairs(subgroups) do
@@ -84,6 +90,7 @@ local msgCollectors = {
     easterEgg = CollectEggMessages,
     unlockable = collectUnlockableMessages,
     specific = collectSpecificMessages,
+    racial = collectRacialMessages,
 }
 
 -- +----------+
@@ -94,6 +101,7 @@ function PickNPCOwnedMessage(ctx)
     local msgGroups = {
         generic = true,
         easterEgg = true,
+        racial = true,
         unlockable = {
             dumbOrc = false,
             lowInt = false,
@@ -108,6 +116,7 @@ function PickNPCOwnedMessage(ctx)
         easterEgg  = .05,
         unlockable = 10,
         specific   = 100,
+        racial     = 20,
     }
 
     -- unlockable

@@ -143,6 +143,53 @@ npcOwned_generic_5: "You feel the need to speak with the owner before reading fu
 npcOwned_generic_6: "The guar-leather binding is engraved with initials that match {npc_name}'s name. Someone cared enough to have this book personalized and you feel the urge to befriend them."
 npcOwned_generic_7: 'A Hlaalu receipt slips from the pages. "Sold to {npc_name}" with a date from months past. The book is meant for private hands, not yours.'
 
+# +--------------+
+# | NPC Owned books |
+# +--------------+
+
+# ===== Racial =====
+
+npcOwned_racial_altmer_1: "The margins are filled with annotations in a precise, elegant hand - {npc_name}'s work. To read without permission would feel presumptuous, even beneath you."
+npcOwned_racial_altmer_2: "The cover is stamped with {npc_name}'s personal seal. An Altmer who cares enough to mark their books cares enough to notice when someone has touched them."
+npcOwned_racial_altmer_3: "A bookplate inside the cover reads: 'From the collection of {npc_name}.' The calligraphy alone suggests this is not a volume to be handled without invitation."
+
+npcOwned_racial_argonian_1: "A worn label is fixed to the spine, hand-lettered in careful Imperial script: '{npc_name}.' In this land, an Argonian who owns a book has worked hard to keep it. You set it down."
+npcOwned_racial_argonian_2: "Tucked between the pages is a small drawing - marsh reeds and open water - alongside the name {npc_name}. Wherever this book has been, it has meant something to its owner."
+npcOwned_racial_argonian_3: "The book is worn at the edges but carefully maintained. {npc_name}'s name is scratched into the inside cover. Things this carefully kept are not for careless hands."
+
+npcOwned_racial_bosmer_1: "A strip of bark is pressed between the pages, scratched with {npc_name}'s name. For a Bosmer to keep a written volume, it must mean something. You leave it closed."
+npcOwned_racial_bosmer_2: "The binding is laced with dried vine instead of thread - {npc_name}'s handiwork, you suspect. Touching it without asking feels wrong."
+npcOwned_racial_bosmer_3: "A small carved token falls from the pages, marked with {npc_name}'s initials. The book is clearly personal. You put it back where you found it."
+
+npcOwned_racial_breton_1: "A folded receipt slips from the cover - purchased at considerable cost by {npc_name}. An investment, not a casual possession. You leave it alone."
+npcOwned_racial_breton_2: "The inside cover bears {npc_name}'s name and a careful index of annotations by page. Whoever this is, they keep their books like ledgers. They would notice if it were opened."
+npcOwned_racial_breton_3: "A wax seal in the cover bears {npc_name}'s mark. Bretons tend to be particular about their property. You set it back down."
+
+npcOwned_racial_dunmer_1: "An ancestral inscription runs along the inside cover, ending with {npc_name}'s name. This book is not just property - it is heritage. You have no right to it."
+npcOwned_racial_dunmer_2: "The spine is embossed with {npc_name}'s House sigil. In Dunmer custom, to read another's private text without leave is no small offense."
+npcOwned_racial_dunmer_3: "A strip of ash-cloth is used as a bookmark, embroidered with {npc_name}'s name in Daedric script. Old habit, old pride. You close the cover."
+npcOwned_racial_dunmer_4: "Personal notes crowd the margins in a tight, angular hand. This is clearly {npc_name}'s private study. The ancestors are said to watch - and so might the owner."
+
+npcOwned_racial_imperial_1: "A printed label is affixed inside the front cover: 'Personal property of {npc_name}. Unauthorized reading is a violation of Imperial property statutes.' You take that seriously."
+npcOwned_racial_imperial_2: "The book is catalogued with a small index card tucked into the front: {npc_name}'s name, acquisition date, subject. Whoever this is keeps orderly records. They would know if this were disturbed."
+npcOwned_racial_imperial_3: "A neat stamp inside the cover reads: '{npc_name} - Personal Library.' Methodical. The kind of person who notices things."
+
+npcOwned_racial_khajiit_1: "A folded note falls from the pages, written in a looping hand: 'This one's book. Return to {npc_name} if lost.' The tone is friendly. The expectation is clear."
+npcOwned_racial_khajiit_2: "The cover is wrapped in a scrap of bright cloth, knotted at the spine. {npc_name}'s name is inked on the inside. A well-traveled book, clearly personal. You put it back."
+npcOwned_racial_khajiit_3: "Tucked inside the cover is a small portrait sketch - {npc_name}, you assume - drawn in confident strokes. This book has followed its owner a long way. It is not yours to read."
+
+npcOwned_racial_nord_1: "The cover is scratched with {npc_name}'s name, cut deep into the leather like a claim staked rather than written. You get the message."
+npcOwned_racial_nord_2: "A simple mark inside the cover - {npc_name}'s name and nothing else. Nords don't annotate. They own. This one is owned."
+npcOwned_racial_nord_3: "A dried snowberry is pressed between the pages alongside a scrap bearing {npc_name}'s name. Something kept close, something personal. You leave it."
+
+npcOwned_racial_orc_1: "The book is bound with leather cord, and {npc_name}'s name is stamped into the front in block letters. Practical. Unambiguous. Not yours."
+npcOwned_racial_orc_2: "A short note is wedged inside the cover: '{npc_name}. Do not touch.' Three words, no room for interpretation. You set it down."
+npcOwned_racial_orc_3: "The spine is reinforced with a strip of hammered metal, and {npc_name}'s initials are engraved into it. Someone who does that to a book takes ownership seriously."
+
+npcOwned_racial_redguard_1: "Inside the cover, {npc_name}'s name is written alongside a short line in Yoku script. You cannot read it, but the tone is unmistakable - this book is spoken for."
+npcOwned_racial_redguard_2: "A narrow ribbon marks the last-read page, stitched at the end with {npc_name}'s initials. The book feels used, important, and very much not abandoned."
+npcOwned_racial_redguard_3: "The cover bears scuff marks and a careful repair along the spine - this book has been maintained with intention. {npc_name}'s name inside confirms it. You leave it undisturbed."
+
 # ===== Unlockable =====
 
 npcOwned_unlockable_dumbOrc_1: "As an Orc [with low intelligence], you struggle to read this. Best ask its owner, {npc_name} for help."
@@ -169,35 +216,83 @@ npcOwned_specific_ownerIsOfMagicClass_6: 'Beside this tome sits a note in {npc_n
 
 factionOwned_generic_1: '"No, doesn''t seem worth the risk", you think to yourself. "Too many eyes."'
 factionOwned_generic_2: 'A simple note rests atop the cover: "Private. Do not touch." The handwriting is sharp, confident, and clearly not bluffing.'
+factionOwned_generic_3: "An official seal is stamped into the cover. Whatever is inside, it belongs to an organization - and organizations keep records of who touches their things."
+factionOwned_generic_4: "The book bears a mark of ownership. Not a person's - something larger. You put it back."
+factionOwned_generic_5: "You pick it up, then set it down again. This kind of property tends to have people watching over it."
+factionOwned_generic_6: 'A small tag is tied to the spine: "Organizational property. Not for general use."'
+factionOwned_generic_7: "This isn't some merchant's stock. The mark on the cover makes clear it belongs to an order - and orders tend to notice missing texts."
+factionOwned_generic_8: "The book is not yours, and the people it belongs to are not the forgiving kind."
+factionOwned_generic_9: "You recognize the seal pressed into the cover. Reading this without leave would be noticed - and not overlooked."
+factionOwned_generic_10: "There is no seller here to negotiate with. This book belongs to an institution, and institutions do not make exceptions for curiosity."
+factionOwned_generic_11: 'A worn stamp on the first page reads: "On loan from the order. Return promptly. Do not copy."'
+factionOwned_generic_12: "The mark of an order is pressed into the spine. Earn a place among them and perhaps this would be yours to read."
+factionOwned_generic_13: "You feel the weight of the seal on the cover - this text is not unclaimed. Someone with authority over it would notice if it were opened uninvited."
+factionOwned_generic_14: 'A folded notice is wedged beneath the book: "All texts on these shelves are organizational property and are not to be accessed without authorization."'
+factionOwned_generic_15: "Not everything locked is locked with a key. This book is closed by something less visible - and harder to pick."
 
 # ===== Specific =====
 
-factionOwned_specific_hlaalu_1: '{npc_name} gives you a look as if he is appraising you. "That book is mine, outlander. In House Hlaalu, trust is capital. Earn some with me, and I''ll consider sharing it."'
-factionOwned_specific_hlaalu_2: '{npc_name} says, "That''s personal property. We Hlaalu believe in relationships as much as transactions. Improve ours, and perhaps we can negotiate."'
-factionOwned_specific_hlaalu_3: '{npc_name}, the nearby Hlaalu, smiles thinly. "That book represents an investment and I don''t share investments with those I don''t trust."'
+factionOwned_specific_hlaalu_1: "This text belongs to House Hlaalu. Information like this is an asset - not something handed out freely."
+factionOwned_specific_hlaalu_2: "House Hlaalu keeps its records close. What is written here has value, and value is not given away without something in return."
+factionOwned_specific_hlaalu_3: 'A neat seal marks the cover: "Property of House Hlaalu. Unauthorized access is noted."'
+factionOwned_specific_hlaalu_4: "You know how House Hlaalu operates - nothing is free, and everything is recorded. This book is no exception."
+factionOwned_specific_hlaalu_5: '"House Hlaalu does not leave its texts unguarded," someone nearby says. "Earn your place in the House, and access like this can be arranged."'
+factionOwned_specific_hlaalu_6: "The House tracks what it owns carefully. This book is one of those things - and you have not been given clearance to read it."
+factionOwned_specific_hlaalu_7: 'A small slip is tucked inside the cover: "Hlaalu property. Access requires authorization."'
 
-factionOwned_specific_redoran_1: '{npc_name}, a Redoran {npc_class}, stays your hand and stands firm. "That book is mine, outlander. Honor demands I only share it with those who have earned my respect. You have not."'
-factionOwned_specific_redoran_2: '"That book stays with those I trust," {npc_name} says. "You have given me no reason to count you among them."'
+factionOwned_specific_redoran_1: "This volume bears the mark of House Redoran. Until you have served the House and earned your standing, it will remain closed to you."
+factionOwned_specific_redoran_2: "The House does not share its texts with those who have not yet proved their worth. Service comes before privilege."
+factionOwned_specific_redoran_3: 'A stamp on the spine reads: "House Redoran. For members in service only."'
+factionOwned_specific_redoran_4: "You recognize the mark on the cover - this belongs to the House. To read it without standing would be a breach of honor."
+factionOwned_specific_redoran_5: '"That text is reserved for those who have served the House," a nearby figure says. "Earn your rank, and it will be made available."'
+factionOwned_specific_redoran_6: "House Redoran does not withhold knowledge out of spite - it withholds it because some things must be earned. You have not earned this yet."
+factionOwned_specific_redoran_7: 'A short inscription on the cover reads: "Redoran property. Distributed by rank."'
 
-factionOwned_specific_telvanni_1: 'A crackle of magic stops your hand. {npc_name} doesn''t even look up. "That book is warded to my person. Only those I deem worthy may touch it. You... are not yet."'
-factionOwned_specific_telvanni_2: '"Do you imagine I would allow a stranger to gawk at my work?" {npc_name} asks coldly. "The Telvanni do not share power freely. Earn my trust if you dare."'
+factionOwned_specific_telvanni_1: "This text belongs to House Telvanni. What is written here is not for those who lack the standing - or the power - to make use of it."
+factionOwned_specific_telvanni_2: "The House does not distribute its knowledge. It is held, studied, and guarded by those who have proved themselves worthy of it. You have not."
+factionOwned_specific_telvanni_3: "A warding glyph is pressed into the cover. Telvanni texts are not opened by the uninitiated - at least, not without consequence."
+factionOwned_specific_telvanni_4: '"House Telvanni does not lend its texts to those without standing," a robed figure says with some disdain. "Advance your rank, and perhaps that will change."'
+factionOwned_specific_telvanni_5: "You feel the pull of the pages, but the House guards its knowledge with more than locks. Without rank, this text is not yours to read."
+factionOwned_specific_telvanni_6: 'A label is pressed into the spine: "House Telvanni - restricted to members of standing."'
+factionOwned_specific_telvanni_7: "The House does not believe in sharing knowledge freely - that is not the Telvanni way. Rise through the ranks, and what is here may yet be offered to you."
 
-factionOwned_specific_moragTong_1: '{npc_name}, the nearby {npc_class} speaks, "Hands off this book, outlander."'
-factionOwned_specific_moragTong_2: '"You move quietly," {npc_name} observes, "but not quietly enough."'
-factionOwned_specific_moragTong_3: '"I''ve killed for less than theft," {npc_name} says from across the room. "That book is mine, sanctioned and sealed. Step away."'
+factionOwned_specific_moragTong_1: "The cover bears a mark you recognize - this text belongs to the Morag Tong. It is not for outside eyes."
+factionOwned_specific_moragTong_2: "This text is not for you. The Morag Tong keeps its knowledge close, and you do not have the standing to read it."
+factionOwned_specific_moragTong_3: "A small seal pressed into the cover makes the message clear - this belongs to the guild. Outsiders do not read what the guild keeps."
+factionOwned_specific_moragTong_4: "You think better of opening this. The Morag Tong notices when their property is disturbed - and they have ways of addressing such things."
+factionOwned_specific_moragTong_5: '"That is not for you," a quiet voice says nearby. There is no anger in it - only certainty.'
+factionOwned_specific_moragTong_6: "The guild keeps its texts for a reason. What is written here is not meant for those who have not earned trust within the order."
+factionOwned_specific_moragTong_7: "You set the book down. Whatever is written inside, it belongs to the guild - and the guild does not forgive careless hands."
+factionOwned_specific_moragTong_8: 'A folded note slips out from between the pages: "Guild record. Return if found."'
 
 # ===== Archetype =====
 
-factionOwned_archetype_mage_1: '{npc_name} casts a Lock spell on the book cover to prevent you from opening it. "That''s mine, not for casual perusal."'
-factionOwned_archetype_mage_2: '"Curious about my collection?" {npc_name} asks. "Understandable. But that book is personal. Prove yourself a worthy colleague first."'
-factionOwned_archetype_mage_3: '"Ah, you have a discerning eye," {npc_name} says. "But that''s my personal copy. Go and get your by yourself."'
+factionOwned_archetype_warrior_1: "This book belongs to the order. Until you have earned a place among them, its pages are not yours to read."
+factionOwned_archetype_warrior_2: "The spine bears a mark you recognize - this text belongs to the order. It is not lent to those who have not yet proved themselves."
+factionOwned_archetype_warrior_3: 'A stamp inside the cover reads: "Property of the Order. Members in good standing only."'
+factionOwned_archetype_warrior_4: "You reach for the cover but stop yourself. This volume is not for outsiders. Earn your rank first, and perhaps it will be offered."
+factionOwned_archetype_warrior_5: "Access to this text is reserved for those who have served. You have not yet earned that right."
+factionOwned_archetype_warrior_6: "There is no shame in being turned away from knowledge you have not yet earned. Prove yourself to the order, and these pages may open to you."
+factionOwned_archetype_warrior_7: 'A short note is tucked under the book: "For members only. If you must ask, you are not one."'
+factionOwned_archetype_warrior_8: '"That volume is not for outsiders," a nearby guard says flatly. "When you have served, you will be given access."'
 
-factionOwned_archetype_warrior_1: '"Not yet," {npc_name} says directly. "That book''s earned its place with me through hard contracts. You haven''t earned your place with me."'
-factionOwned_archetype_warrior_2: '{npc_name} meets your eyes. "I earned that volume through blood and sweat. You''ve earned nothing from me and I don''t like you. Change that."'
+factionOwned_archetype_mage_1: "This text is restricted to authorized members. The order does not share its knowledge with those who have not yet earned the privilege."
+factionOwned_archetype_mage_2: "A faint ward lingers over the cover. This knowledge is not open to the uninitiated - rank has its privileges in matters of study."
+factionOwned_archetype_mage_3: 'A neat label affixed to the spine reads: "Restricted Circulation. Rank required."'
+factionOwned_archetype_mage_4: "You feel the pull of the pages, but the order guards its texts carefully. Rise through their ranks, and this knowledge may yet be yours."
+factionOwned_archetype_mage_5: "The order does not distribute its texts freely. What is written here is reserved for those who have demonstrated sufficient standing."
+factionOwned_archetype_mage_6: '"That text is not available to you," a robed figure says, without looking up from their own work. "Advance your standing with the order, and perhaps that will change."'
+factionOwned_archetype_mage_7: 'A small placard rests beside the book: "Circulated to senior members only. Inquire within."'
+factionOwned_archetype_mage_8: "The book is marked with the order's seal. You know what that means: until you are one of theirs in more than name, these pages will not open for you."
 
-factionOwned_archetype_rogue_1: '"That one''s mine" {npc_name} says casually.'
-factionOwned_archetype_rogue_2: 'A scrap of parchment slips free: "{npc_name}''s business. Eyes that don''t belong get removed". Judging by the ink, it wasn''t written as a joke.'
-factionOwned_archetype_rogue_3: 'A crude but effective note is pinned to the front: "Hands off. If you''re reading this, you''re already in trouble." Signed simply: {npc_name}.'
+factionOwned_archetype_rogue_1: "This one isn't for you - not yet. Earn a little more trust with the outfit, and things like this have a way of becoming available."
+factionOwned_archetype_rogue_2: "The guild keeps certain texts for members who have proven themselves. You haven't reached that point. Not yet."
+factionOwned_archetype_rogue_3: 'A folded note is slipped under the cover: "Eyes for members only. You know who you are."'
+factionOwned_archetype_rogue_4: "You know better than to touch what isn't offered to you. The guild notices these things, and you haven't earned this yet."
+factionOwned_archetype_rogue_5: "Information like this has value precisely because it isn't shared freely. Climb a little higher, and the right people will see that you get a look."
+factionOwned_archetype_rogue_6: '"Not for you, friend," someone murmurs nearby. "Come back when you''ve done more for the cause."'
+factionOwned_archetype_rogue_7: "The guild keeps its knowledge close. Who gets to read what depends entirely on how much you've proven you can be trusted."
+factionOwned_archetype_rogue_8: 'A scrawled note marks the cover: "Guild use. Keep it that way."'
 
 # +--------------+
 # | Easter Eggs! |
