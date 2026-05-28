@@ -58,9 +58,9 @@ local function collectGenericMessages(subgroups, ctx)
 end
 
 local function collectRacialMessages(subgroups, ctx)
-    local race = GetRecord(ctx.owner.self).race
-    local prefix = msgSrc .. "racial_" .. race
-    return CollectAllMessagesByPrefix(prefix, l10n)
+    local record = GetRecord(ctx.owner.self)
+    local prefix = msgSrc .. "racial_" .. record.race
+    return CollectAllMessagesByPrefix(prefix, l10n, AdditionalMsgCtx(record))
 end
 
 local function collectUnlockableMessages(subgroups, ctx)
