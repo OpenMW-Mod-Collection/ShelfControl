@@ -32,6 +32,10 @@ ownedMinimumDisposition_description: |
 
 misc_groupName: Misceleneous
 modEnabled_name: Enable Mod
+sneakyReadingIsACrime_name: Sneaky Reading is a Crime
+sneakyReadingIsACrime_desc: >
+  While sneaking, you can freely read any books.
+  This setting toggles a crime check when you do it.
 enableMessages_name: Enable Messages
 enableCellWhitelist_name: Enable Logical Cell Whitelist
 enableCellWhitelist_description: |

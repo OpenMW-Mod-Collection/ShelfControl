@@ -71,6 +71,13 @@ I.Settings.registerGroup {
             default = true,
         },
         {
+            key = 'sneakyReadingIsACrime',
+            name = 'sneakyReadingIsACrime_name',
+            description = 'sneakyReadingIsACrime_desc',
+            renderer = 'checkbox',
+            default = true,
+        },
+        {
             key = 'enableMessages',
             name = 'enableMessages_name',
             renderer = 'checkbox',

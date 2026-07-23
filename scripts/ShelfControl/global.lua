@@ -11,20 +11,19 @@ require("scripts.ShelfControl.messages.messageManager")
 local sectionBuyable = storage.globalSection("SSettingshelfControl_buyable")
 local sectionOwned = storage.globalSection("SettingsShelfControl_owned")
 local sectionMisc = storage.globalSection("SettingsShelfControl_misc")
+local sneaking = false
 
-local function checkOwnership(section, ownershipChecker, ctx)
-    if section:get("supress")
+local function bookIsOwned(section, ownershipChecker, ctx)
+    return section:get("supress")
         and ownershipChecker(ctx)
         and section:get("minDisposition") > ctx.owner.disposition
         and not (sectionMisc:get("enableCellWhitelist") and LocationIsWhitelisted(ctx))
-    then
-        ShowMessage(ctx)
-        return true
-    end
-    return false
 end
 
 -- true = allow activation, false = block activation
+---@param book GameObject
+---@param actor GameObject
+---@return boolean
 local function onBookActivation(book, actor)
     if not sectionMisc:get("modEnabled") then return true end
     -- if not player
@@ -44,15 +43,39 @@ local function onBookActivation(book, actor)
         owner = Owner.new(book, actor),
         player = actor,
     }
+
     -- check buyable and owned conditions
-    if checkOwnership(sectionBuyable, IsBuyable, ctx)
-        or checkOwnership(sectionOwned, IsNpcOwned, ctx)
-        or checkOwnership(sectionOwned, IsFactionOwned, ctx)
+    if bookIsOwned(sectionBuyable, IsBuyable, ctx)
+        or bookIsOwned(sectionOwned, IsNpcOwned, ctx)
+        or bookIsOwned(sectionOwned, IsFactionOwned, ctx)
     then
-        return false
+        -- reading during sneaking is free
+        if sneaking then
+            -- crime check :D
+            if sectionMisc:get("sneakyReadingIsACrime") then
+                I.Crimes.commitCrime(actor, {
+                    victim = ctx.owner.self,
+                    faction = ctx.owner.factionId,
+                    type = types.Player.OFFENSE_TYPE.Theft,
+                    arg = book.type.records[book.recordId].value * book.count
+                })
+            end
+            return true
+        else
+            ShowMessage(ctx)
+            return false
+        end
     end
 
     return true
 end
 
 I.Activation.addHandlerForType(types.Book, onBookActivation)
+
+return {
+    eventHandlers = {
+        ShelfControl_sneakStatusChanged = function(sneakStatus)
+            sneaking = sneakStatus
+        end
+    }
+}

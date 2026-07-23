@@ -1,4 +1,5 @@
-GLOBAL: scripts/ShelfControl/global.lua
-
 PLAYER: scripts/ShelfControl/settingsPlayer.lua
 GLOBAL: scripts/ShelfControl/settingsGlobal.lua
+
+GLOBAL: scripts/ShelfControl/global.lua
+PLAYER: scripts/ShelfControl/player.lua

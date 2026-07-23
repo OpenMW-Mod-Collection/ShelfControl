@@ -1,5 +1,10 @@
 # Shelf Control (OpenMW)
 
+## 2.4
+
+- Allowed reading books when sneaking
+- Reading books while sneaking now counts the same as stealing them :)
+
 ## 2.3
 
 - Allowed to read faction-owned books if the cell either has no faction members (or they are dead)
