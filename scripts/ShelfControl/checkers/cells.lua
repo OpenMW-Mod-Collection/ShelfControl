@@ -13,10 +13,10 @@ local ICClasses = {
     priest = true,
 }
 local whitelistedCellNames = {
-    l10n("library"),
-    l10n("temple"),
-    l10n("chapel"),
-    l10n("shrine"),
+    l10n("library", {}),
+    l10n("temple", {}),
+    l10n("chapel", {}),
+    l10n("shrine", {}),
 }
 local blacklistedCells = {
     -- [l10n("example")] = true,

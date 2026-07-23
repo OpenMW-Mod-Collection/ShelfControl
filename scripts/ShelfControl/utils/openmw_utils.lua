@@ -1,4 +1,5 @@
 local world = require("openmw.world")
+local types = require("openmw.types")
 
 require("scripts.ShelfControl.utils.consts")
 
@@ -8,6 +9,17 @@ function GetActiveActorByRecordId(recordId)
             return activeActor
         end
     end
+end
+
+---@param cell Cell
+---@param factionId string
+function AnyActiveFactionMembersInCell(cell, factionId)
+    for _, npc in ipairs(cell:getAll(types.NPC)) do
+        if npc.type.getFactionRank(npc, factionId) > 0 and not npc.type.isDead(npc) then
+            return true
+        end
+    end
+    return false
 end
 
 function GetRecord(obj)

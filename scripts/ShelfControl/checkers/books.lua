@@ -33,6 +33,7 @@ function IsFactionOwned(ctx)
     if not ctx.owner.factionId then return false end
     if UnrestrictiveFactions[string.lower(ctx.owner.factionId)] then return false end
 
+    if not ctx.owner.factionMembersNearby then return false end
     local playerRank = ctx.player.type.getFactionRank(ctx.player, ctx.owner.factionId)
     local requiredRank = ctx.owner.factionRank or 1
     if playerRank >= requiredRank then return false end

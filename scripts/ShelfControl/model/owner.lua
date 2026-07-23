@@ -9,34 +9,34 @@ local sectionMisc = storage.globalSection("SettingsShelfControl_misc")
 --- @class Owner
 --- @field recordId string|nil     The NPC's record ID (if the book has a direct owner).
 --- @field factionId string|nil    The owning faction's ID (if faction-owned).
---- @field factionRank string|nil  Rank required to be allowed to pick up the book
---- @diagnostic disable-next-line: undefined-doc-name
---- @field book types.Book         Book object
---- @diagnostic disable-next-line: undefined-doc-name
---- @field self types.Actor|nil    The active actor reference in the current cell (nil if not loaded).
+--- @field factionRank number|nil  Rank required to be allowed to pick up the book
+--- @field book GameObject         Book object
+--- @field self GameObject|nil     The active actor reference in the current cell (nil if not loaded).
 --- @field isDead boolean          Whether the owner is dead (or not in the same cell → treated as dead).
 --- @field disposition integer     Disposition of the owner towards the player (-1 if unavailable).
 --- @field sellsBooks boolean      Whether the owner offers books as a service.
 --- @field record table|nil        The NPC record (if applicable).
+--- @field factionMembersNearby boolean
 local Owner = {}
 Owner.__index = Owner
 
 --- Constructor: create a new Owner instance for a given book and player.
---- @param book any   The book being inspected.
---- @param player any The player actor reference.
+--- @param book GameObject   The book being inspected.
+--- @param player GameObject The player actor reference.
 --- @return Owner
 function Owner.new(book, player)
-    local self = setmetatable({}, Owner)
+    local self                = setmetatable({}, Owner)
 
-    self.recordId    = book.owner and book.owner.recordId or nil
-    self.factionId   = book.owner and book.owner.factionId or nil
-    self.factionRank = book.owner and book.owner.factionRank or nil
-    self.book        = book
-    self.disposition = -1
-    self.record      = nil
-    self.self        = nil
-    self.sellsBooks  = false
-    self.isDead      = false
+    self.recordId             = book.owner and book.owner.recordId or nil
+    self.factionId            = book.owner and book.owner.factionId or nil
+    self.factionRank          = book.owner and book.owner.factionRank or nil
+    self.book                 = book
+    self.disposition          = -1
+    self.record               = nil
+    self.self                 = nil
+    self.sellsBooks           = false
+    self.isDead               = false
+    self.factionMembersNearby = false
 
     self:_collectData(book, player)
     self:_printDebugInfo()
@@ -65,6 +65,10 @@ function Owner:_collectData(book, player)
     if self.recordId and not self.factionId then
         self.record = types.NPC.record(self.recordId)
         self.sellsBooks = self.record.servicesOffered["Books"] or false
+    end
+
+    if self.factionId then
+        self.factionMembersNearby = AnyActiveFactionMembersInCell(self.book.cell, self.factionId)
     end
 end
 

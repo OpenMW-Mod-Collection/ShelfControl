@@ -110,13 +110,13 @@ local specificRules = {
 local function checkRacialMessages(actor)
     local race = GetRecord(actor).race
     local firstRacialMsgKey = msgSrc .. "racial_" .. race .. "_1"
-    return l10n(firstRacialMsgKey) ~= firstRacialMsgKey
+    return l10n(firstRacialMsgKey, {}) ~= firstRacialMsgKey
 end
 
 local function checkFactionMessages(actor)
     for _, faction in pairs(actor.type.getFactions(actor)) do
         local firstFactionMsgKey = msgSrc .. "faction_" .. faction .. "_1"
-        if l10n(firstFactionMsgKey) ~= firstFactionMsgKey then
+        if l10n(firstFactionMsgKey, {}) ~= firstFactionMsgKey then
             return true
         end
     end
@@ -251,6 +251,6 @@ function PickBuyableMessage(ctx)
     if msgs then
         return RandomChoice(msgs)
     else
-        return l10n("error")
+        return l10n("error", {})
     end
 end

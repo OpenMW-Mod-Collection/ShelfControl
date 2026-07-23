@@ -141,6 +141,6 @@ function PickNPCOwnedMessage(ctx)
     if msgs then
         return RandomChoice(msgs)
     else
-        return l10n("error")
+        return l10n("error", {})
     end
 end

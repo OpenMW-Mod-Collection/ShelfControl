@@ -1,5 +1,9 @@
 # Shelf Control (OpenMW)
 
+## 2.3
+
+- Allowed to read faction-owned books if the cell either has no faction members (or they are dead)
+
 ## 2.2
 
 - Fleshed out messages for faction-owned books: they no longer mention any names and have more variety
