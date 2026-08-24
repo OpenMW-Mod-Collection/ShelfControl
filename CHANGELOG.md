@@ -1,5 +1,9 @@
 # Shelf Control (OpenMW)
 
+## 3.0
+
+- Rewritten many messages, cutting parts that overexplain stuff or tell you how to feel about your actions. Made by Tinumbra1
+
 ## 2.4
 
 - Allowed reading books when sneaking

@@ -87,4 +87,4 @@ Since you can no longer open certain owned books, you'll need to steal them via 
 
 **Sosnoviy Bor** - Author  
 **BcemXaxa** - Cover artwork  
-**Hyacinth** - Message writing
+**Hyacinth and Tinumbra1** - Message writing
