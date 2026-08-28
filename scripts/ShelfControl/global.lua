@@ -8,7 +8,7 @@ require("scripts.ShelfControl.checkers.cells")
 require("scripts.ShelfControl.utils.openmw_utils")
 require("scripts.ShelfControl.messages.messageManager")
 
-local sectionBuyable = storage.globalSection("SSettingshelfControl_buyable")
+local sectionBuyable = storage.globalSection("SettingsShelfControl_buyable")
 local sectionOwned = storage.globalSection("SettingsShelfControl_owned")
 local sectionMisc = storage.globalSection("SettingsShelfControl_misc")
 local sneaking = false

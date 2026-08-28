@@ -1,5 +1,9 @@
 # Shelf Control (OpenMW)
 
+## 3.0.1
+
+- Fixed a typo in settings getter, preventing buyable books' settings from being read correctly
+
 ## 3.0
 
 - Rewritten many messages, cutting parts that overexplain stuff or tell you how to feel about your actions. Made by Tinumbra1
